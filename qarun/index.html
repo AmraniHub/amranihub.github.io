@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qarun: Time & Money</title>
+<meta name="description" content="Qarun keeps your time and your money in one place, on your Android phone and your Windows laptop. No account, no ads, no cloud.">
+<link rel="icon" href="star.svg">
+<style>
+  :root { --bg:#09090B; --panel:#141417; --line:#2E2A1F; --gold:#D4AF37; --gold2:#F3DC9A; --ink:#F4F0E8; --muted:#A09A8C; --green:#5FD39A; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  a { color: var(--gold2); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 30px; text-align: center; background: radial-gradient(ellipse at 50% 0%, #2a2210 0%, transparent 70%); }
+  header img { width: 76px; height: 76px; }
+  h1 { font: bold clamp(40px, 7vw, 64px)/1.05 Georgia, "Times New Roman", serif; color: var(--gold); margin: 10px 0 6px; }
+  .tag { font: italic 21px Georgia, serif; color: var(--gold2); margin: 0 0 8px; }
+  .lead { color: var(--muted); max-width: 640px; margin: 0 auto; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin: 34px 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 24px; }
+  .card.main { border-color: rgba(212,175,55,.55); background: linear-gradient(160deg, rgba(212,175,55,.14), rgba(212,175,55,.03)); }
+  .card h2 { font: 600 24px Georgia, serif; margin: 0 0 6px; }
+  .card p { color: var(--muted); margin: 0 0 16px; }
+  .btn { display: inline-block; background: var(--gold); color: var(--bg); font-weight: 700; text-decoration: none; padding: 12px 20px; border-radius: 14px; margin: 4px 8px 4px 0; }
+  .btn.ghost { background: transparent; color: var(--gold2); border: 1px solid var(--line); }
+  .small { font-size: 14px; color: var(--muted); }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; }
+  .steps li { counter-increment: s; padding: 8px 0 8px 40px; position: relative; }
+  .steps li::before { content: counter(s); position: absolute; left: 0; top: 7px; width: 28px; height: 28px; border-radius: 50%; background: rgba(212,175,55,.2); color: var(--gold); font-weight: 700; display: grid; place-items: center; font-size: 14px; }
+  .shot { width: 100%; border-radius: 16px; border: 1px solid var(--line); display: block; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+  h3 { font: 600 22px Georgia, serif; color: var(--gold); margin: 40px 0 12px; }
+  ul.feat { padding-left: 20px; color: var(--muted); } ul.feat b { color: var(--ink); font-weight: 600; }
+  footer { border-top: 1px solid var(--line); margin-top: 50px; padding: 26px 0 40px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  footer a.gh { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  footer svg { width: 26px; height: 26px; fill: var(--ink); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img src="star.svg" alt="">
+  <h1>Qarun</h1>
+  <p class="tag">Time and money: spend both like an investor.</p>
+  <p class="lead">Tasks, a focus timer, habits and your money in one calm app, on your Android phone and your Windows laptop. No account, no ads, no cloud.</p>
+</div></header>
+
+<main class="wrap">
+  <div class="cards">
+    <div class="card main" id="laptop">
+      <h2>💻 Qarun for Windows</h2>
+      <p>The same Qarun on your laptop. Link it with your phone once, on the same Wi-Fi, and both stay the same.</p>
+      <a class="btn" href="Qarun-for-Windows.zip">⬇ Download for Windows</a>
+      <div class="small">Windows 10 or 11, 15 MB, free. Microsoft Store: coming soon.</div>
+    </div>
+    <div class="card">
+      <h2>📱 Qarun for Android</h2>
+      <p>Tasks that ring on time, a focus timer, habits, money accounts in any currency, a money plan and widgets.</p>
+      <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.amrani.qarun">▶ Google Play</a>
+      <div class="small">Now in testing on Google Play.</div>
+    </div>
+  </div>
+
+  <h3>Install on the laptop</h3>
+  <div class="card"><ol class="steps">
+    <li>Download <b>Qarun-for-Windows.zip</b> and open it. Drag the <b>Qarun</b> folder to Documents (or anywhere).</li>
+    <li>Open the folder and double-click <b>Qarun.exe</b>. If Windows says "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b> (the Store version will not ask this).</li>
+    <li>When Windows asks about the network, allow <b>Private networks</b>, so your phone can reach the laptop over your Wi-Fi.</li>
+    <li>In Qarun, open <b>Settings & phone → Link a phone</b>. On the phone: <b>⚙ Settings → Laptop</b>, then type the code (or take a photo of the QR code).</li>
+  </ol></div>
+
+  <h3>See it</h3>
+  <div class="grid2">
+    <img class="shot" src="laptop-today.jpg" alt="Qarun on the laptop: Today, with the wealth card, the task to do now and habits">
+    <img class="shot" src="laptop-money.jpg" alt="Qarun on the laptop: Money, with accounts, the money plan and the month">
+  </div>
+
+  <h3>What's inside</h3>
+  <div class="grid2">
+    <ul class="feat">
+      <li><b>Tasks:</b> dates, times, reminders, repeats, priorities, steps, lists, idea folders, a day timeline and a calendar</li>
+      <li><b>Time:</b> a focus timer or stopwatch per activity, weekly goals and the pace you need each day</li>
+      <li><b>Habits:</b> your own daily habits with streaks</li>
+    </ul>
+    <ul class="feat">
+      <li><b>Money:</b> accounts in any currency, gold or crypto, budgets, savings goals</li>
+      <li><b>Money plan:</b> expected income, bills and debts with part payments</li>
+      <li><b>Private:</b> your data stays on your phone and your laptop. The link between them is end-to-end encrypted; nothing is sent to us</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="wrap">
+  <a class="gh" href="https://github.com/AmraniHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Made by AmraniHub</a>
+  <span class="small"><a href="https://amranihub.github.io/qarun-privacy/">Privacy policy</a></span>
+</footer>
+</body>
+</html>
